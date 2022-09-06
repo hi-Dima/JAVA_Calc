@@ -52,14 +52,9 @@ public class main {
                     } else if (b.equals("*")) {
                         y = currentA.getValue() * currentC.getValue();
                     }
-                    else {
-                        System.out.println("такого знака арифметической операции нет в базе");
-                        y = y+1;
-                    }
                     if (y<1){
                         System.out.println("Результатом работы калькулятора с римскими числами могут быть только положительные числа");
                     }
-                    y = y-1;
                     for (Roman roman : Roman.values()) {
                         if (y == roman.hasCurrency()) {
                             System.out.println("Результат "+ roman);
